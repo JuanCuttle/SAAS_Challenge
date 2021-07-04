@@ -8,8 +8,20 @@ public class ATM {
 	private int value20;
 	private int value10;
 	
+	// Standard constructor with empty ATM
 	public ATM(){
-		
+		this.value100 = 0;
+		this.value50 = 0;
+		this.value20 = 0;
+		this.value10 = 0;
+	}
+	
+	// Constructor for ATM already containing notes
+	public ATM(int hundredNotes, int fiftyNotes, int twentyNotes, int tenNotes){
+		this.value100 = hundredNotes*100;
+		this.value50 = fiftyNotes*50;
+		this.value20 = twentyNotes*20;
+		this.value10 = tenNotes*10;
 	}
 
 	// Returns the number of notes of each type in a formatted String
